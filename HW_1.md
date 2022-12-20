@@ -1,1 +1,129 @@
+1. Зайти на сайт https://github.com/
+2. Авторизоваться
+3. Нажать раздел "Repositories"
+4. Нажать кнопку "New"
+5. В поле "Repository name" написать JSON
+6. Нажать "Create repository"
 
+7. Клонировать репозиторий JSON на локальный компьютер.
+git clone https://github.com/lenanick/JSON.git
+
+8. Внутри локального JSON создать файл “new.json”.
+cd JSON
+touch new.json
+
+9. Добавить файл под гит.
+git add new.json
+
+10. Закоммитить файл.
+git commit -m "add new file"
+
+11. Отправить файл на внешний GitHub репозиторий.
+git push
+
+12. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json
+Press the button "i"
+
+{
+ "Name":"Elena",
+ "Age":"38",
+ "Pets":"0",
+ "Salary":"500$"
+}
+Esc
+:wq
+
+13. Отправить изменения на внешний репозиторий.
+git commit -am "Edit file new.json"
+git push
+
+14. Создать файл preferences.json
+touch preferences.json
+В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, страну которую хотели бы посетить) в формате JSON.
+vim preferences.json
+Press the button "i"
+
+{  "Favorite film":   "The girls",
+   "Favorite serial": "No",
+   "Favorite food":   "Vareniks" ,
+   "Favorite season": "Spring" ,
+   "Favorite coutry": "Holland"
+}
+Esc
+:wq
+
+15. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+touch skills.json
+vim skills.json
+Press the button "i"
+{
+"1.": "Базовая теория (Что такое тестирование, багрепорты, документация, виды, методы, направления тестирования и т.п.) SDLC, STLC",
+"2.": "Что такое клиент-серверная архитектура",
+"3.": "HTTP Методы запросов на сервер",
+"4.": "Коды ответов HTTP сервера",
+"5.": "Структуры HTTP запросов и ответов",
+"6.": "Что такое JSON, XML. Их структура",
+"7.": "Тестирование API через Postman (JS, автотесты API)",
+"8.": "Снятие и чтение логов c внешнего сервера",
+"9.": "Снифинг http web трафика через Charles и Fiddler",
+"10.": "Dev Tools веб браузеров (Google Chrome, FireFox)",
+"11.": "VPN. (Как работает, зачем нужен, как использовать, варианты инструментов)",
+"12.": "Мобильное тестирование",
+"13.": "Особенность iOS, Android, гайдлайны",
+"14.": "Сборка iOS приложений на XCode. (У кого нет Mac компьютера, просто посмотрят)",
+"15.": "Сборка Android приложений на Android Studio",
+"16.": "ADB (управление андройд девайсами)",
+"17.": "Настройка прокси и vpn на iOS и Android",
+"18.": "Перехват (сниффинг) мобильного трафика через Charles и Fiddler на iOS и Android",
+"19.": "Командная строка (terminal) Linux (копирование, создание, просмотр, перемещение файлов на серверах без графического интерфейса)",
+"20.": "Основы bash скриптинг, автоматизация рутинных задач на сервере",
+"21.": "Доступ к удалённым серверам",
+"22.": "Основы SQL (Create, Delete, Drop, Insert Into, Select, From, Where, Join)",
+"23.": "База данных Postgres (установка, настройка и использование)",
+"24.": "Нереляционная база данных Redis (установка, настройка и использование)",
+"25.": "Нагрузочное тестирование в Jmeter",
+"26.": "Методология разработки Scrum",
+"27.": "Python. (Изучение основ. Создание клиент серверного приложения)"
+}
+Esc
+:wq
+
+16. Отправить сразу 2 файла на внешний репозиторий.
+git add skills.json preferences.json
+git commit -m "add new files preferences.json skills.json"
+git push
+
+17.На веб интерфейсе создать файл bug_report.json.
+18.Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+ 
+  1. Зайти на сайт github
+  2. Открыть репозиторий JSON
+  3. Нажать на кнопку Add file
+  4. Выбрать в меню Create new file
+  5. В поле name написать bug_report.json
+  6. В поле Commit new file написать Create bug_report.json
+  7. Нажать на кнопку Commit new file
+  
+  19. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+  9. Сделать Commit changes (сохранить) изменения на веб интерфейсе. Нажать иконку "Карандаш"
+{
+  "ID": "1",
+  "Title": "При клике на кнопку 'Trade now' не происходит переход на трейдинговую платформу",
+  "Preconditions": "Пользователь не зарегестрирован",
+  "STR": {
+      "1": "Перейти на сайт 'Capital com'",
+      "2": "Клик по кнопке 'Trade now' в хэдере главной страницы"
+  }
+  "Expected result": "При клике на кнопку 'Trade now' происходит переход на трейдинговую платформу",
+  "Actual result": "Переход на трейдинговую платформу не происходит",
+  "Severyty": "Hight",
+  "Environment": "Laptop, Intel Core i5 7th Gen, x64, 2.7GHz, RAM 8"
+  "Attachments":
+  "Reproducibility": "Usually"
+}
+
+В поле Commit changes написать Update bug_report.json
+Нажать на кнопку Commit changes
+Синхронизировать внешний и локальный репозиторий JSON
+git pull
