@@ -26,10 +26,10 @@ vim new.json
 Press the button "i"
 
 {
- "Name":"Elena",
- "Age":"38",
- "Pets":"0",
- "Salary":"500$"
+"name": "Sergey",
+"surname": "Hladchenko",
+"number pf pits": "0",
+"desired salary": "600"
 }
 Esc
 :wq
@@ -44,12 +44,14 @@ touch preferences.json
 vim preferences.json
 Press the button "i"
 
-{  "Favorite film":   "The girls",
-   "Favorite serial": "No",
-   "Favorite food":   "Vareniks" ,
-   "Favorite season": "Spring" ,
-   "Favorite coutry": "Holland"
+{
+"favorite moive": "Django Unchained",
+"favorite TV series": "no",
+"favorite food": "pea soup",
+"favorite season": "summer, winter",
+"country I want to visit": "USA"
 }
+
 Esc
 :wq
 
