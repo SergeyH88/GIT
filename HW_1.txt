@@ -6,7 +6,7 @@
 6. Нажать "Create repository"
 
 7. Клонировать репозиторий JSON на локальный компьютер.
-git clone https://github.com/lenanick/JSON.git
+git clone https://github.com/SergeyH88/JSON
 
 8. Внутри локального JSON создать файл “new.json”.
 cd JSON
